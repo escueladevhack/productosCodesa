@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ProductosCodesa</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="producto">Producto</string>
+    <string name="codigo">Código</string>
+    <string name="nombre">Nombre</string>
+    <string name="descripcion">Descripción</string>
+    <string name="siguiente">Siguiente >></string>
+    <string name="nuevo">Nuevo</string>
+    <string name="acerca">Acerca</string>
+    <string name="digitarcodigo">Por favor digita el código</string>
+    <string name="digitarnombre">Por favor digita el nombre</string>
+    <string name="digitardescripcion">Por favor digita la descripción</string>
+    <string name="precio_compra">Precio Compra</string>
+    <string name="precio_venta">Precio Venta</string>
+    <string name="finalizar">Finalizar >></string>
+
+    <string-array name="tipoProductos">
+        <item>Carnes</item>
+        <item>Verduras</item>
+        <item>Frutas</item>
+        <item>Mariscos</item>
+    </string-array>
+</resources>
