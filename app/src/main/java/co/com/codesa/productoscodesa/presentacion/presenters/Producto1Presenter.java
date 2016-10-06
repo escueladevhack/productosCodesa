@@ -2,6 +2,8 @@ package co.com.codesa.productoscodesa.presentacion.presenters;
 
 import android.content.Context;
 
+import java.util.List;
+
 import co.com.codesa.productoscodesa.R;
 import co.com.codesa.productoscodesa.Util.Cache;
 import co.com.codesa.productoscodesa.dominio.LProducto;
@@ -55,6 +57,13 @@ public class Producto1Presenter implements IProducto1Presenter {
         producto.setFechaVencimiento(fechaVencimiento);
 
         Cache.getInstance().add("producto", producto);
+
+        LProducto objLProducto = new LProducto();
+        objLProducto.addProducto(producto.getCodigo(), producto.getNombre(), producto.getFechaVencimiento(),
+                producto.getFechaPrd(), producto.getDescripcion(), producto.getPrecioCompra(),
+                producto.getPrecioVenta(), producto.getTipo(), null);
+
+        List<Producto> lstPrd = objLProducto.obtenerTodosProductos();
 
         view.ocultarCargando();
 
